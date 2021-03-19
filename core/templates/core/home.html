@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center">
+    <img src="{% static 'core/images/core_profile.jpg' %}" alt="profile" class="img-thumbnail mt-5 mx-5" width="150px"
+         height="50px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-white-bold ">Hello</h1>
+    <div>
+        <p style="text-indent:100px;">I am <b class="text-warning">Akash Nagtilak </b>having 1 year expirince in Python
+            devloper. I'm intern at <b class="text-warning">SplendorNet Technologies Pvt.Ltd...</b><br><br><br>
+
+        <center>My dream is start my small startup. My startapp name is MineSoftware.Pvt.Ltd.<br><br></center>
+        <center>We making robust and secure web appliction.Our upcoming project is Android App Devlopment...</center>
+
+
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5  ">Hire Me</a>
+         <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact Us</a>
+
+    </div>
+</div>
+    {% endblock content%}
